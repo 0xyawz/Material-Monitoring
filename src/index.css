@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Font Family Overrides for elegant, organic humanist pairing */
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Redefine core theme colors to match the "Natural Tones" palette */
+  
+  /* Slate shades mapped to ivory backgrounds, warm stones, and dark charcoal */
+  --color-slate-50: #fdfcf8;      /* Main canvas background */
+  --color-slate-100: #f9f7f0;     /* Sidebar/Secondary background */
+  --color-slate-200: #e5e1d3;     /* Main border color */
+  --color-slate-300: #d0cabc;     /* Stiffer border color / divider */
+  --color-slate-400: #a68a64;     /* Secondary / accent tan text */
+  --color-slate-500: #707568;     /* Soft slate text */
+  --color-slate-600: #545b4c;     /* Medium dark slate text */
+  --color-slate-700: #42493a;     /* Deep slate text */
+  --color-slate-800: #31372a;     /* Charcoal body text */
+  --color-slate-900: #2d3326;     /* Heading / Dark forest charcoal */
+
+  /* Blue shades mapped to the primary Olive/Sage Green accent (#5a634d) */
+  --color-blue-50: #f4f6f1;       /* Warm light olive */
+  --color-blue-100: #e6eae0;      /* Soft olive highlight */
+  --color-blue-200: #ced8bf;      /* Medium olive border */
+  --color-blue-300: #abbda3;
+  --color-blue-400: #859c7f;
+  --color-blue-500: #6b775c;
+  --color-blue-600: #5a634d;      /* Primary natural olive button/accent */
+  --color-blue-700: #4a523f;      /* Hover state */
+  --color-blue-800: #3b4132;
+  --color-blue-900: #2d3326;
+
+  /* Purple shades mapped to the secondary Sand/Tan Gold accent (#a68a64) */
+  --color-purple-50: #faf7f2;
+  --color-purple-100: #f4ece0;
+  --color-purple-200: #e8d9c0;
+  --color-purple-300: #d8c099;
+  --color-purple-400: #c2a272;
+  --color-purple-500: #b59870;
+  --color-purple-600: #a68a64;    /* Secondary warm tan button/accent */
+  --color-purple-700: #937854;    /* Hover state */
+  --color-purple-800: #7a6345;
+  --color-purple-900: #624f38;
+
+  /* Orange shades mapped to custom Terracotta/Rust (#c26d43) for warm delivery status */
+  --color-orange-50: #faf3ef;
+  --color-orange-100: #f6e6dc;
+  --color-orange-200: #eedbcf;
+  --color-orange-300: #e0beaa;
+  --color-orange-400: #cf9b7e;
+  --color-orange-500: #c26d43;      /* Core terracotta orange */
+  --color-orange-600: #b05c34;
+  --color-orange-700: #924b29;
+  --color-orange-800: #753c22;
+  --color-orange-900: #5e311c;
+
+  /* Emerald shades mapped to rich Forest Green (#436b53) for completed status */
+  --color-emerald-50: #f0f5f2;
+  --color-emerald-100: #e0ebe5;
+  --color-emerald-200: #d2e0d7;
+  --color-emerald-300: #aac2b3;
+  --color-emerald-400: #80a18c;
+  --color-emerald-500: #5a8268;
+  --color-emerald-600: #436b53;    /* Core forest green */
+  --color-emerald-700: #365642;
+  --color-emerald-800: #2b4535;
+  --color-emerald-900: #213529;
+
+  /* Custom helper variables */
+  --color-natural-bg: #fdfcf8;
+  --color-natural-sidebar: #f9f7f0;
+  --color-natural-card: #f2efdf;
+  --color-natural-card-darker: #e8e4d9;
+  --color-natural-primary: #5a634d;
+  --color-natural-secondary: #a68a64;
+  --color-natural-dark: #2d3326;
+  --color-natural-border: #e5e1d3;
+}
+
+body {
+  background-color: var(--color-slate-50);
+  color: var(--color-slate-800);
+  font-family: var(--font-sans);
+}
+
+/* Elegant transition effects */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

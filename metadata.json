@@ -1,0 +1,6 @@
+{
+  "name": "Material Procurement & Delivery Tracker",
+  "description": "Aplikasi monitoring permintaan, pembelian, dan status pengantaran material ke site konstruksi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
